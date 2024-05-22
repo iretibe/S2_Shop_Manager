@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<h1>S2 Shop Manager</h1>
+
+<h2>Welcome!</h2>
+<br />
+
+@foreach (var item in Widgets)
+{
+    <DynamicComponent Type="item"></DynamicComponent>
+}
